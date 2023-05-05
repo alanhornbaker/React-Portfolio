@@ -1,0 +1,89 @@
+:root {
+  --purple: #535b8d;
+  --black: #000000;
+  --light-purple: #8d8fe2;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.profile {
+  width: 250px;
+  height: 200px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.footerImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  background-color: var(--purple);
+  color: #ffffff;
+}
+
+.navbar {
+  background: linear-gradient(45deg, var(--light-purple) 16px, transparent 0),
+    repeating-linear-gradient(
+      45deg,
+      #000000,
+      #000000 10px,
+      var(--light-purple) 0,
+      var(--light-purple) 20px
+    );
+  background-position: left top;
+  background-size: 65px 83px;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.active {
+  color: white !important;
+}
+
+.nav-colored {
+  color: #d3d3d3 !important;
+}
+
+.blur-image {
+  filter: blur(0);
+  transition: filter 0.3s ease-in-out;
+}
+
+.blur-image.blur-effect {
+  filter: blur(5px);
+}
+
+.badge {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.resume {
+  margin: 10px;
+}
+
+h2 {
+  margin: 10px;
+}
+
+form {
+  width: 500px;
+  flex-wrap: nowrap;
+}
